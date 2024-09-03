@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Blog - JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC)</title>
+    <link rel="icon" href="assets/jnral.logoo.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <header id="home">
+      <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="main-nav">
+            <li><a href="#"><img src="assets/jnral.logoo.png" alt="Logo" height="60"></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="doctors.html">Doctors</a></li>
+            <li class="hideOnMobile"><a href="services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="facilities.html">Facilities</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="FAQs.html">FAQs</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      </header>
+      
+      <br><br>
+
+    <section class="container-blog">
+        <h1>"JNRAL Family Corporation Celebrates 29 Years of Success"</h1>
+        <span> -August 1, 2024</span>
+        <p>Team Building at Hardin ng Postema <br><br>JNRAL Family Corp. marked its 29th anniversary with a memorable celebration and team-building event at Hardin ng Postema on August 1, 2024. The day was filled with activities that strengthened bonds and fostered camaraderie among team members.
+          <br><br> Special thanks to the organizing committee: Raul Manas, Vhie Cervana, Elmie Navalatan, Ate Eunice Marcial Gallardo, Raquel M. Caparas, Laica Placides, Leonor Deguzmansangalang, Gladys Cenizal Omel, Elizabeth Elisabeth Geroy, and Mark Ivan Clark Samartino. <br><br> The event highlighted the spirit of unity that drives JNRAL’s continued success. </p>
+        
+        <!-- Main image -->
+        <div class="main-image">
+            <img id="mainImage" src="assets/29th Anniversary and Team Building at Hardin ng Postema.jpg" alt="Enhancing Safety and Cleanliness">
+        </div>
+
+        <br><br>
+
+        <!-- Gallery -->
+        <div class="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema1.jpg" alt="Gallery Image 1">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema2.jpg" alt="Gallery Image 2">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema3.jpg" alt="Gallery Image 3">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema4.jpg" alt="Gallery Image 4">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema5.jpg" alt="Gallery Image 5">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema6.jpg" alt="Gallery Image 6">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema7.jpg" alt="Gallery Image 7">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema8.jpg" alt="Gallery Image 8">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema9.jpg" alt="Gallery Image 9">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema10.jpg" alt="Gallery Image 10">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema10.jpg" alt="Gallery Image 10">
+                <img src="assets/29th Anniversary and Team Building at Hardin ng Postema11.jpg" alt="Gallery Image 11">
+
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+          
+          <!-- Modal for viewing images -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
+        <!-- JavaScript for Modal and Navigation -->
+        <script>
+            var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var currentIndex = 0;
+
+var images = [
+    document.getElementById("mainImage"),
+    ...document.querySelectorAll(".gallery img")
+];
+
+function showModal(index) {
+    modal.style.display = "block";
+    modalImg.src = images[index].src;
+    modalImg.style.width = "auto";  // Set image to original size
+    modalImg.style.height = "auto"; 
+    modalImg.style.maxWidth = "100%";
+    modalImg.style.maxHeight = "100%";
+    currentIndex = index;
+}
+
+images.forEach((img, index) => {
+    img.onclick = function() {
+        showModal(index);
+    }
+});
+
+// Close modal when clicking on the "X" button
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close modal when clicking outside of the image
+modal.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close modal with the Escape key
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        modal.style.display = "none";
+    }
+});
+
+// Navigation with previous and next buttons
+var prev = document.querySelector(".prev");
+var next = document.querySelector(".next");
+
+prev.onclick = function() {
+    currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+    showModal(currentIndex);
+}
+
+next.onclick = function() {
+    currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+    showModal(currentIndex);
+}
+
+// Navigation with arrow keys
+document.addEventListener("keydown", function(event) {
+    if (modal.style.display === "block") {
+        if (event.key === "ArrowLeft") {
+            prev.onclick();
+        } else if (event.key === "ArrowRight") {
+            next.onclick();
+        }
+    }
+});
+
+        </script>
+
+
+
+        <!-- Related blog thumbnails -->
+         
+        <h3>Related Blogs</h3>
+        <div class="related-blogs">
+
+        <div class="gallery-related">
+            <a href="blog1.html">
+            <img src="assets/CAVSU ccat Medical Mission.jpg">
+            <p class="text-title">"MY HEALTH, MY CONCERN: Medical and Dental Mission"<span> -August 07, 2024</span><br>
+            <a href="blog1.html" class="button read-more">Read More</a></p>
+   
+        </div>   
+
+        <div class="gallery-related">
+          <a href="blog3.html">
+            <img src="assets/Orientation with Stakeholders.jpg">
+            <p class="text-title">"Strengthening Healthcare Partnerships in Cavite"<span> -June 18-19, 2024</span><br>
+                <a href="blog3.html" class="button read-more">Read More</a></p>
+ 
+        </div>
+
+        <div class="gallery-related">
+          <a href="blog4.html"></a>
+            <img src="assets/Naic Tuli.jpg">
+            <p class="text-title">"Successful Operation Tuli in Bancaan, Naic"<span> -June 15, 2024</span><br>
+                <a href="blog4.html" class="button read-more">Read More</a></p>
+   
+        </div>
+
+
+        </div>
+
+
+    </section>
+
+
+       <!--footer-->
+      <br><br><br>
+      <section class="footer">
+        <div class="section__container footer__container">
+          <!-- Insert the image at the beginning of the footer -->
+          <div class="footer__logo">
+            <img src="assets/jnral.logoo.png" alt="JNRAL Family Corporation Logo" />
+          </div>
+          
+          <h4>JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC)</h4>
+          
+          
+          <p>
+            Small Team, Big Care - Your Health is Our Priority. More Than Just a Hospital, We're Family.
+          </p>
+          
+          <ul class="footer__nav">
+            <li class="footer__link"><a href="index.html">Home</a></li>
+            <li class="footer__link"><a href="about.html">About</a></li>
+            <li class="footer__link"><a href="doctors.html">Doctors</a></li>
+            <li class="footer__link"><a href="services.html">Services</a></li>
+            <li class="footer__link"><a href="blog.html">Blog</a></li>
+            <li class="footer__link"><a href="facilities.html">Facilities</a></li>
+            <li class="footer__link"><a href="FAQs.html">FAQs</a></li>
+            <li class="footer__link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+
+        <div class="footer__bar">
+          Copyright © 2024 JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC). All rights reserved.
+        </div>
+      </section>
+      
+     
+     <!-- Scroll to Top Button -->
+     <a href="#" class="scroll-to-top" id="scrollToTopBtn">
+       <i class="ri-arrow-up-s-line"></i>
+     </a>
+     
+     <script>
+         function viewImage(img) {
+            window.open(img.src, '_blank');
+        }
+     </script>
+
+
+     </body>
+     </html>
+     

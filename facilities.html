@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="facilities.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Facilities - JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC)</title>
+    <link rel="icon" href="assets/jnral.logoo.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <header id="home">
+      <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="main-nav">
+            <li><a href="#"><img src="assets/jnral.logoo.png" alt="Logo" height="60"></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="doctors.html">Doctors</a></li>
+            <li class="hideOnMobile"><a href="services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="facilities.html">Facilities</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="FAQs.html">FAQs</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      </header>
+      
+      <br><br><br>
+
+
+    
+      <div class="header_facilities">OUR FACILITIES</div>
+      <h6>"Welcome to our facilities, where personalized care meets modern comfort. We're here to provide you with exceptional healthcare in a friendly, welcoming space."</h6>
+
+    <!-- First Row -->
+    <div class="row-title">Private Rooms</div>
+    <div class="container-facilities">
+      <div class="facilities">
+        <img src="assets/private.jpg" onclick="openModal(); currentSlide(1)">
+      </div>
+      <div class="facilities">
+        <img src="assets/private1.jpg" onclick="openModal(); currentSlide(2)">
+      </div>
+      <div class="facilities">
+        <img src="assets/private2.jpg" onclick="openModal(); currentSlide(3)">
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row-title">Semi-Private Rooms</div>
+    <div class="container-facilities">
+      <div class="facilities">
+        <img src="assets/semiprivate.jpg" onclick="openModal(); currentSlide(4)">
+      </div>
+      <div class="facilities">
+        <img src="assets/semiprivate1.jpg" onclick="openModal(); currentSlide(5)">
+      </div>
+      <div class="facilities">
+        <img src="assets/semiprivate2.jpg" onclick="openModal(); currentSlide(6)">
+      </div>
+    </div>
+
+    <!-- Other Facilities -->
+    <div class="row-title">Other Facilities</div>
+    <div class="container-facilities">
+      <div class="facilities">
+        <img src="assets/or complex.jpg" onclick="openModal(); currentSlide(7)">
+        <div class="description">OR/DR/NICU COMPLEX</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/internalmedicinderoom.jpg" onclick="openModal(); currentSlide(8)">
+        <div class="description">Internal Medicine Room</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/breastfeedingunit.jpg" onclick="openModal(); currentSlide(9)">
+        <div class="description">Breast Feeding Unit</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/cashier.jpg" onclick="openModal(); currentSlide(7)">
+        <div class="description">Cashier</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/emergency room.jpg" onclick="openModal(); currentSlide(8)">
+        <div class="description">Emergency Room</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/information station.jpg" onclick="openModal(); currentSlide(9)">
+        <div class="description">Information Station</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/pediasurgery.jpg" onclick="openModal(); currentSlide(7)">
+        <div class="description">Pediatrics Surgery</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/laboratory.jpg" onclick="openModal(); currentSlide(8)">
+        <div class="description">Laboratory</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/pharmacy.jpg" onclick="openModal(); currentSlide(9)">
+        <div class="description">Pharmacy</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/xray room.jpg" onclick="openModal(); currentSlide(7)">
+        <div class="description">X-ray Room</div>
+      </div>
+      <div class="facilities">
+        <img src="assets/nurse station.jpg" onclick="openModal(); currentSlide(8)">
+        <div class="description">Nurse Station</div>
+      </div>
+      <!-- Additional facilities images go here with correct indexing -->
+    </div>
+
+    <!-- Single Modal Element -->
+    <div id="myModal" class="modal" onclick="clickOutsideToClose(event)">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <img src="assets/private.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/private1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/private2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/semiprivate.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/semiprivate1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/semiprivate2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/or complex.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/internalmedicinderoom.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/breastfeedingunit.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/cashier.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/emergency room.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/information station.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/pediasurgery.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/laboratory.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/pharmacy.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/xray room.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="assets/nurse station.jpg" style="width:100%">
+        </div>
+        <!-- Additional slides go here -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+            
+     <!--footer-->
+     <br><br><br>
+     <section class="footer">
+       <div class="section__container footer__container">
+         <!-- Insert the image at the beginning of the footer -->
+         <div class="footer__logo">
+           <img src="assets/jnral.logoo.png" alt="JNRAL Family Corporation Logo" />
+         </div>
+         
+         <h4>JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC)</h4>
+         
+         
+         <p>
+          Small Team, Big Care - Your Health is Our Priority. More Than Just a Hospital, We're Family.
+         </p>
+         
+         <ul class="footer__nav">
+           <li class="footer__link"><a href="index.html">Home</a></li>
+           <li class="footer__link"><a href="about.html">About</a></li>
+           <li class="footer__link"><a href="doctors.html">Doctors</a></li>
+           <li class="footer__link"><a href="services.html">Services</a></li>
+           <li class="footer__link"><a href="blog.html">Blog</a></li>
+           <li class="footer__link"><a href="facilities.html">Facilities</a></li>
+           <li class="footer__link"><a href="FAQs.html">FAQs</a></li>
+           <li class="footer__link"><a href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+       
+
+       <div class="footer__bar">
+         Copyright © 2024 JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC). All rights reserved.
+       </div>
+     </section>
+     
+      <!-- Scroll to Top Button -->
+      <a href="#" class="scroll-to-top" id="scrollToTopBtn">
+        <i class="ri-arrow-up-s-line"></i>
+      </a>
+  
+      <script src="main.js"></script>
+
+      <script>
+        // facilities.js
+  
+        let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function openModal() {
+      document.getElementById('myModal').style.display = 'block';
+  }
+  
+  function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+  }
+  
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+      showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+  
+      if (n > slides.length) {
+          slideIndex = 1;
+      }
+  
+      if (n < 1) {
+          slideIndex = slides.length;
+      }
+  
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+  }
+  
+  function clickOutsideToClose(event) {
+      if (event.target.className === 'modal') {
+          closeModal();
+      }
+  }
+  
+  document.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowRight') {
+          plusSlides(1);
+      } else if (event.key === 'ArrowLeft') {
+          plusSlides(-1);
+      } else if (event.key === 'Escape') {
+          closeModal();
+      }
+  });
+  
+  
+      </script> 
+
+    </body>
+  </html>
+  

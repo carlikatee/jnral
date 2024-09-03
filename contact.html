@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Contact - JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC)</title>
+    <link rel="icon" href="assets/jnral.logoo.png" type="image/x-icon">
+
+  </head>
+
+  <body>
+    <header id="home">
+      <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="main-nav">
+            <li><a href="#"><img src="assets/jnral.logoo.png" alt="Logo" height="60"></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="doctors.html">Doctors</a></li>
+            <li class="hideOnMobile"><a href="services.html">Services</a></li>
+            <li class="hideOnMobile"><a href="facilities.html">Facilities</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="FAQs.html">FAQs</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+      </header>
+      
+  <!-- Contact CSS Styles Starts --> 
+
+      <br><br><br>
+      <section class="contact" id="contact">
+        <div class="section__container contact__container">
+          <div class="contact__col">
+            <h4>Contact a Jnral Hospital </h4>
+            <p>We always aim to reply within 24 hours.</p>
+          </div>
+          <div class="contact__col">
+            <div class="contact__card">
+              <span><i class="ri-phone-line"></i></span>
+              <h4>Call us</h4>
+              <h5>(046) 489-6398</h5>
+              <p>We are online now</p>
+            </div>
+          </div>
+          <div class="contact__col">
+            <div class="contact__card">
+              <span><a href="https://us.mail.yahoo.com/"><i class="ri-mail-line"></i></a></span>
+              <h4>Send us an inquiry</h4>
+              <p>jnralfamilycorporation@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+    <!--Form Section -->
+
+      <div class="container">
+        <div class="form-container">
+          <h1>Fill the form to contact us directly</h1>
+          <form action="https://formspree.io/f/xanwjoaw" method="POST">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="middlename">Middle Name</label>
+            <input type="text" id="middlename" name="middlename" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+      
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+      
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" required>
+      
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+      
+            <button type="submit">Send Your Message</button>
+          </form>
+        </div>
+
+        <!-- Location Section -->
+      <section class="location">
+        <div class="location__container">
+          <div class="location__details">
+            <h2 class="location__title">Our Location</h2>
+            <p class="location__address">
+              JNRAL Family Corporation (Manas Medical Clinic)<br>
+              A Soriano Highway, Sahud - Ulan, Tanza, 4108 Cavite
+            </p>
+            <a href="https://maps.app.goo.gl/NmDPwUXQdR1smvxX9" target="_blank" class="location__button">View on Google Maps</a>
+          </div>
+          <div class="location__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938.1896008242132!2d120.821283!3d14.37069!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962becf032f5a3%3A0x7318051eace63a05!2sJnral%20Family%20Corporation!5e0!3m2!1sen!2sph!4v1691664007165!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      
+     <!--footer-->
+     <br><br><br>
+     <section class="footer">
+       <div class="section__container footer__container">
+         <!-- Insert the image at the beginning of the footer -->
+         <div class="footer__logo">
+           <img src="assets/jnral.logoo.png" alt="JNRAL Family Corporation Logo" />
+         </div>
+         
+         <h4>JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC)</h4>
+         
+         <p>
+          Small Team, Big Care - Your Health is Our Priority. More Than Just a Hospital, We're Family.
+         </p>
+         
+         <ul class="footer__nav">
+           <li class="footer__link"><a href="index.html">Home</a></li>
+           <li class="footer__link"><a href="about.html">About</a></li>
+           <li class="footer__link"><a href="doctors.html">Doctors</a></li>
+           <li class="footer__link"><a href="services.html">Services</a></li>
+           <li class="footer__link"><a href="blog.html">Blog</a></li>
+           <li class="footer__link"><a href="facilities.html">Facilities</a></li>
+           <li class="footer__link"><a href="FAQs.html">FAQs</a></li>
+           <li class="footer__link"><a href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+       
+
+       <div class="footer__bar">
+         Copyright © 2024 JNRAL FAMILY CORPORATION (MANAS MEDICAL CLINIC). All rights reserved.
+       </div>
+     </section>
+     
+
+<!-- Scroll to Top Button -->
+<a href="#" class="scroll-to-top" id="scrollToTopBtn">
+  <i class="ri-arrow-up-s-line"></i>
+</a>
+
+<script src="main.js"></script>
+
+</body>
+</html>
